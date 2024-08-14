@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SRI VIJAY DURGA</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 8;
+        padding: 8;
+        background-color: #c3f806;
+        color: #100000;
+    }
+    header {
+        background-color: #eaf1f1;
+        color: #0a0a01;
+        padding: 20px;
+        text-align: center;
+    }
+    #header-img {
+        width: 100px;
+        border-radius: 50%;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    nav a {
+        color: #020700bb;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+    main {
+        padding: 20px;
+        background-color: #686b6ee4;
+        margin: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    article {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    form {
+        display: grid;
+        gap: 10px;
+    }
+    label {
+        font-weight: bold;
+    }
+    textarea {
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+    input[type="number"], input[type="radio"], input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    input[type="submit"] {
+        background-color: #27ae60;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    footer {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+</style>
+</head>
+<body>
+
+          <header>
+        <img id="header-img" src="C:\Users\sailaja\Desktop\RESTAURANT\resturanant logo.jpg" alt="SRI VIJAY DURGA Logo">
+        <h1>SRI VIJAY DURGA</h1>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#order-form">Place Your Order</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <article>
+                <img src="C:\Users\sailaja\Desktop\RESTAURANT\kheer.jpeg" alt="KHEER">
+                <h3>Kheer</h3>
+                <p>Experience the essence of traditional Indian comfort with our Kheer—a delectable rice pudding simmered to perfection. Made with tender rice, rich milk, and sweetened with just the right amount of sugar, this dessert is delicately flavored with aromatic cardamom and adorned with a garnish of crunchy nuts and fragrant dried fruits. Each spoonful offers a creamy, luscious taste of timeless culinary tradition. <em> ₹80/-</em></p>
+            </article>
+            <article>
+                <img src="C:\Users\sailaja\Desktop\RESTAURANT\sambar rice.jpeg" alt="Sambar rice">
+                <h3>Sambar Rice</h3>
+                <p>Sambar Rice, or Sambar Sadam, is a flavorful and hearty South Indian dish that combines rice with a spicy, tangy lentil stew known as Samba <em>₹100</em></p>
+            </article>
+            <article>
+                <img src="C:\Users\sailaja\Desktop\RESTAURANT\fruit salad.jpeg" alt="fruit salad">
+                <h3>Fruit Salad</h3>
+                <p>Indulge in our refreshing Fruit Salad, a colorful medley of nature’s sweetest offerings. Bursting with a variety of seasonal fruits, each bite is a delightful combination of juicy, crisp, and tender textures. Lightly tossed with a hint of honey and a sprinkle of mint, this vibrant salad is a perfect balance of flavors, offering a healthy and satisfying treat that’s as nourishing as it s delicious <em>₹120</em></p>
+            </article>
+        </section>
+
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            
+                <label for="kheer-quantity">KHEER:</label>
+                <input type="number" id="KHEER-quantity" name="Kheer-quantity" min="0" value="0">
+                
+                <label for="Sambar rice-quantity">Sambar rice:</label>
+                <input type="number" id="Samabar rice-quantity" name="Sambar rice-quantity" min="0" value="0">
+
+                <label for="Fruit salad-quantity">Fruit salad:</label>
+                <input type="number" id="Fruit salad-quantity" name="Fruit salad-quantity" min="0" value="0">
+
+                <fieldset>
+                    <legend>Choose Your Sides:</legend>
+                    <label><input type="checkbox" name="side" value="kova"> kova</label>
+                    <label><input type="checkbox" name="side" value="ghee"> Ghee</label>
+                    <label><input type="checkbox" name="side" value="masala add on salad"> Masala spread on fruit salad</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Add-ons:</legend>
+                    <label><input type="radio" name="addon" value="No dry fruits"> No dry fruits</label>
+                    <label><input type="radio" name="addon" value="no extra spices"> NO SPICES TO ADD</label>
+                    <label><input type="radio" name="addon" value="Extra Cultery"> Extra cultery</label>
+                </fieldset>
+
+                <label for="special-requests">Special Requests:</label>
+                <textarea id="special-requests" name="special-requests"></textarea>
+
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with love by Codédex @dnsr846574857</p>
+    </footer>
+</body>
+</html>
